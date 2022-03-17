@@ -12,6 +12,10 @@ const CompanySchema = new mongoose.Schema({
   address: {
     type: String,
   },
+  encryptedPassword: {
+    type: String,
+    required: true,
+  },
 });
 
 const Company = mongoose.model('Company', CompanySchema);
