@@ -12,6 +12,7 @@ const run = async () => {
 
   const admin = new AdminBro(options);
   const router = buildAdminRouter(admin);
+
   app.use(admin.options.rootPath, router);
   app.listen(port, () => console.log(
     `Example app listening at http://localhost:${port}`,
